@@ -1,16 +1,17 @@
 import Head from "next/head"
+import React from "react"
 
-export default function Home() {
+export default function () {
   return (
     <div>
       <Head>
-        <title>Talha's Portfolio</title>
+        <title>About Me</title>
         <meta
           name="keywords"
           content="web development, programming, portfolio, developer"
         />
       </Head>
-      <h1>Welcome to Next</h1>
+      <h1>About</h1>
     </div>
   )
 }
