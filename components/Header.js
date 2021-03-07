@@ -5,7 +5,7 @@ export default function Header() {
 	return (
 		<div>
 			<h1>
-				<span>Talha Abbasi&prime;</span> Portfolio
+				<span>Talha Abbasi&prime;s</span> Portfolio
 			</h1>
 		</div>
 	)
