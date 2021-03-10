@@ -1,5 +1,5 @@
 import React from "react"
-import { makeStyles, StylesProvider } from "@material-ui/core/styles"
+import { makeStyles } from "@material-ui/core/styles"
 import Typography from "@material-ui/core/Typography"
 
 const useStyles = makeStyles(() => ({
@@ -21,7 +21,7 @@ export default function Header() {
         Hi, I'm Talha Abbasi
       </Typography>
       <Typography variant="h6" align="center" gutterBottom>
-        Software Engineer
+        Software Engineer 🧑‍💻
       </Typography>
     </div>
   )
