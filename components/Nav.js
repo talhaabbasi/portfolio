@@ -1,4 +1,5 @@
 import React from "react"
+import Link from "next/link"
 import { makeStyles } from "@material-ui/core/styles"
 import AppBar from "@material-ui/core/AppBar"
 import Toolbar from "@material-ui/core/Toolbar"
@@ -25,7 +26,9 @@ export default function ButtonAppBar() {
       <AppBar position="static" className={classes.appBar}>
         <Toolbar>
           <Typography className={classes.title}></Typography>
-          <Button color="inherit">About</Button>
+          <a href="#about">
+            <Button color="inherit">About</Button>
+          </a>
           <Button color="inherit">Experience</Button>
           <Button color="inherit">Projects</Button>
           <Button color="inherit">Contact</Button>
