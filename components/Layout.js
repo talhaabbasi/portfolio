@@ -1,7 +1,7 @@
 import styles from "../styles/Layout.module.css"
 import React from "react"
-import Nav from './Nav'
-import Header from './Header'
+import Nav from "./Nav"
+import Header from "./Header"
 
 export default function Layout({ children }) {
   return (
