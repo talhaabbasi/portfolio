@@ -29,7 +29,9 @@ export default function ButtonAppBar() {
           <a href="#about">
             <Button color="inherit">About</Button>
           </a>
-          <Button color="inherit">Experience</Button>
+          <a href="#experience">
+            <Button color="inherit">Experience</Button>
+          </a>
           <Button color="inherit">Projects</Button>
           <Button color="inherit">Contact</Button>
         </Toolbar>
