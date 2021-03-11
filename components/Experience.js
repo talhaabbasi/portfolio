@@ -130,7 +130,7 @@ export default function Experience() {
       <ScrollableAnchor id="experience">
         <Container maxWidth="sm" className={classes.experience}>
           <Typography variant="h5" align="center">
-            Experiences
+            Experience
           </Typography>
         </Container>
       </ScrollableAnchor>
@@ -187,7 +187,7 @@ export default function Experience() {
                   <ArrowRightIcon />
                 </ListItemIcon>
                 <ListItemText>
-                  Deployed and maintained applications using AWS Products like
+                  Deployed and maintained applications using AWS Services like
                   AWS Lambda, Amazon DynamoDb, AWS Cognito and Chalice.
                 </ListItemText>
               </ListItem>
