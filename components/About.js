@@ -26,11 +26,7 @@ export default function About() {
             About me
           </Typography>
           <Typography align="center">
-            <img
-              alt="Remy Sharp"
-              src="/talha.jpeg"
-              className={classes.avatar}
-            />
+            <img alt="Avatar" src="/talha.jpeg" className={classes.avatar} />
           </Typography>
           <Typography align="center" paragraph>
             A software engineer based in Karachi, Pakistan 🇵🇰
