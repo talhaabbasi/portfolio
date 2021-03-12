@@ -73,7 +73,8 @@ export default function GitHub() {
   const classes = useStyles()
   const [user, setUser] = useState(null),
     [totalContributions, setTotalContributions] = useState(null),
-    [startingDate, setStartingDate] = useState(null)
+    [startingDate, setStartingDate] = useState(null),
+    [viewPortEntered, setViewPortEntered] = useState(false)
   useEffect(async () => {
     const response = await fetch(
       `https://api.github.com/users/${process.env.NEXT_PUBLIC_GITHUB_USERNAME}`
@@ -111,13 +112,7 @@ export default function GitHub() {
             <CardContent>
               <p>
                 <span className={classes.countUp}>
-                  <CountUp end={totalContributions} redraw={true}>
-                    {({ countUpRef, start }) => (
-                      <VisibilitySensor onChange={start} delayedCall>
-                        <span ref={countUpRef} />
-                      </VisibilitySensor>
-                    )}
-                  </CountUp>
+                  <CountUp end={totalContributions} delay={3} redraw={true} />
                 </span>{" "}
                 commits since {startingDate}
               </p>
