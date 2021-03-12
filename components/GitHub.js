@@ -111,12 +111,7 @@ export default function GitHub() {
             <CardContent>
               <p>
                 <span className={classes.countUp}>
-                  <CountUp
-                    end={totalContributions}
-                    redraw={true}
-                    delay={1}
-                    duration={5}
-                  >
+                  <CountUp end={totalContributions} redraw={true}>
                     {({ countUpRef, start }) => (
                       <VisibilitySensor onChange={start} delayedCall>
                         <span ref={countUpRef} />
@@ -124,7 +119,7 @@ export default function GitHub() {
                     )}
                   </CountUp>
                 </span>{" "}
-                contributions since {startingDate}
+                commits since {startingDate}
               </p>
             </CardContent>
           </CardActionArea>
