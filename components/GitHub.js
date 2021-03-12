@@ -6,9 +6,9 @@ import CardActionArea from "@material-ui/core/CardActionArea"
 import CardActions from "@material-ui/core/CardActions"
 import CardContent from "@material-ui/core/CardContent"
 import CardMedia from "@material-ui/core/CardMedia"
-import Button from "@material-ui/core/Button"
 import GitHubIcon from "@material-ui/icons/GitHub"
 import CountUp from "react-countup"
+import VisibilitySensor from "react-visibility-sensor"
 
 const useStyles = makeStyles(() => ({
   root: { marginTop: 20 },
@@ -110,12 +110,19 @@ export default function GitHub() {
             />
             <CardContent>
               <p>
-                <span>
+                <span className={classes.countUp}>
                   <CountUp
-                    duration={10}
                     end={totalContributions}
-                    className={classes.countUp}
-                  />
+                    redraw={true}
+                    delay={1}
+                    duration={5}
+                  >
+                    {({ countUpRef, start }) => (
+                      <VisibilitySensor onChange={start} delayedCall>
+                        <span ref={countUpRef} />
+                      </VisibilitySensor>
+                    )}
+                  </CountUp>
                 </span>{" "}
                 contributions since {startingDate}
               </p>

@@ -14,6 +14,9 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "50%",
     margin: "15px 0",
   },
+  universityLink: {
+    color: "#0087cb",
+  },
 }))
 
 export default function About() {
@@ -33,8 +36,17 @@ export default function About() {
           </Typography>
           <br />
           <Typography align="center" paragraph>
-            I went to FAST NUCES, Karachi for my degree in Computer Science and
-            have been on a journey to get better at programming ever since.
+            I went to{" "}
+            <a
+              target="_blank"
+              href="http://nu.edu.pk/"
+              rel="noopener noreferrer"
+              className={classes.universityLink}
+            >
+              FAST National University
+            </a>
+            , Karachi for my Bachelor's in Computer Science and have been on a
+            journey to get better at programming ever since.
           </Typography>
           <br />
           <Typography align="center" paragraph>
