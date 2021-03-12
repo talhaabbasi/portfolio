@@ -1,6 +1,6 @@
 import React from "react"
 import { makeStyles } from "@material-ui/core/styles"
-import { Typography, Avatar, Container, Box } from "@material-ui/core"
+import { Typography, Container } from "@material-ui/core"
 import ScrollableAnchor from "react-scrollable-anchor"
 
 const useStyles = makeStyles((theme) => ({

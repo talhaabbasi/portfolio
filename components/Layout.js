@@ -4,6 +4,7 @@ import Nav from "./Nav"
 import Header from "./Header"
 import About from "./About"
 import Experience from "./Experience"
+import GitHub from "./GitHub"
 
 export default function Layout({ children }) {
   return (
@@ -12,6 +13,7 @@ export default function Layout({ children }) {
       <div className={styles.container}>
         <Header />
         <About />
+        <GitHub />
         <Experience />
       </div>
     </>

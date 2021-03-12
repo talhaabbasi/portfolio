@@ -1,6 +1,6 @@
 import Head from "next/head"
 
-export default function Home({ user }) {
+export default function Home() {
   return (
     <div>
       <Head>
@@ -16,17 +16,4 @@ export default function Home({ user }) {
       </Head>
     </div>
   )
-}
-
-export const getStaticProps = async () => {
-  const response = await fetch(
-    `https://api.github.com/users/${process.env.GITHUB_USERNAME}`
-  )
-  const user = await response.json()
-
-  return {
-    props: {
-      user,
-    },
-  }
 }
