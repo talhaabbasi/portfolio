@@ -112,7 +112,11 @@ export default function GitHub() {
             <CardContent>
               <p>
                 <span className={classes.countUp}>
-                  <CountUp end={totalContributions} delay={3} redraw={true} />
+                  <CountUp
+                    end={totalContributions}
+                    duration={10}
+                    redraw={true}
+                  />
                 </span>{" "}
                 commits since {startingDate}
               </p>

@@ -5,6 +5,7 @@ import Header from "./Header"
 import About from "./About"
 import Experience from "./Experience"
 import GitHub from "./GitHub"
+import Projects from "./Projects"
 
 export default function Layout({ children }) {
   return (
@@ -15,6 +16,7 @@ export default function Layout({ children }) {
         <About />
         <GitHub />
         <Experience />
+        <Projects />
       </div>
     </>
   )
