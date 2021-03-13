@@ -31,6 +31,9 @@ export default function About() {
           <Typography align="center">
             <img alt="Avatar" src="/talha.jpeg" className={classes.avatar} />
           </Typography>
+          <Typography align="center" variant="h5" gutterBottom>
+            Hi, I'm Talha Abbasi
+          </Typography>
           <Typography align="center" paragraph>
             A software engineer based in Karachi, Pakistan 🇵🇰
           </Typography>

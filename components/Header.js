@@ -26,7 +26,7 @@ export default function Header() {
   return (
     <div className={classes.root}>
       <Typography variant="h4" align="center">
-        Hi, I'm Talha Abbasi
+        <img src="/logo.png" />
       </Typography>
       <Typography variant="h6" align="center">
         Software Engineer 🧑‍💻
