@@ -49,18 +49,7 @@ const AntTab = withStyles((theme) => ({
     minWidth: 72,
     fontWeight: theme.typography.fontWeightRegular,
     marginRight: theme.spacing(4),
-    fontFamily: [
-      "-apple-system",
-      "BlinkMacSystemFont",
-      '"Segoe UI"',
-      "Roboto",
-      '"Helvetica Neue"',
-      "Arial",
-      "sans-serif",
-      '"Apple Color Emoji"',
-      '"Segoe UI Emoji"',
-      '"Segoe UI Symbol"',
-    ].join(","),
+    fontFamily: [].join(","),
     "&:hover": {
       color: "#3c806f",
       opacity: 1,
@@ -95,6 +84,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
     display: "flex",
     width: "80%",
+    marginTop: "5rem",
+    marginBottom: "2rem",
   },
   tabs: {
     borderRight: `1px solid ${theme.palette.divider}`,
@@ -111,10 +102,6 @@ const useStyles = makeStyles((theme) => ({
     listStyle: "none",
     content: "00BB",
   },
-  experience: {
-    marginTop: "5rem",
-    marginBottom: "2rem",
-  },
 }))
 
 export default function Experience() {
@@ -126,14 +113,7 @@ export default function Experience() {
   }
 
   return (
-    <>
-      <ScrollableAnchor id="experience">
-        <Container maxWidth="sm" className={classes.experience}>
-          <Typography variant="h5" align="center">
-            Experience
-          </Typography>
-        </Container>
-      </ScrollableAnchor>
+    <ScrollableAnchor id="experience">
       <div className={classes.root}>
         <AntTabs
           orientation="vertical"
@@ -345,6 +325,6 @@ export default function Experience() {
           </Grid>
         </TabPanel>
       </div>
-    </>
+    </ScrollableAnchor>
   )
 }

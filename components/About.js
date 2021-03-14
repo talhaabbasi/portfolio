@@ -25,9 +25,6 @@ export default function About() {
     <ScrollableAnchor id="about">
       <div className={classes.root}>
         <Container maxWidth="sm">
-          <Typography variant="h5" align="center">
-            About me
-          </Typography>
           <Typography align="center">
             <img alt="Avatar" src="/talha.jpeg" className={classes.avatar} />
           </Typography>
