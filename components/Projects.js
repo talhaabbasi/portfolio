@@ -2,7 +2,6 @@ import React from "react"
 import { Container, Grid, makeStyles } from "@material-ui/core"
 import Card from "./Card"
 import ScrollableAnchor from "react-scrollable-anchor"
-import Typography from "@material-ui/core/Typography"
 
 const useStyles = makeStyles((theme) => ({
   root: {

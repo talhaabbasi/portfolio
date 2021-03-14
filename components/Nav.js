@@ -16,6 +16,14 @@ const useStyles = makeStyles(() => ({
   appBar: {
     backgroundColor: "black",
   },
+  button: {
+    textTransform: "none",
+  },
+  resume: {
+    color: "#3c806f",
+    borderColor: "#3c806f",
+    textTransform: "none",
+  },
 }))
 
 export default function ButtonAppBar() {
@@ -27,20 +35,37 @@ export default function ButtonAppBar() {
         <Toolbar>
           <Typography className={classes.title}></Typography>
           <a href="#about">
-            <Button color="inherit">About</Button>
+            <Button color="inherit" className={classes.button}>
+              About
+            </Button>
           </a>
           <a href="#experience">
-            <Button color="inherit">Experience</Button>
+            <Button color="inherit" className={classes.button}>
+              Experience
+            </Button>
           </a>
           <a href="#projects">
-            <Button color="inherit">Projects</Button>
+            <Button color="inherit" className={classes.button}>
+              Projects
+            </Button>
           </a>
           <a
             href="mailto:talhaabbasi1997@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button color="inherit">Contact</Button>
+            <Button color="inherit" className={classes.button}>
+              Contact
+            </Button>
+          </a>
+          <a href="/Talha's Resume.pdf" download>
+            <Button
+              variant="outlined"
+              color="inherit"
+              className={classes.resume}
+            >
+              Resume
+            </Button>
           </a>
         </Toolbar>
       </AppBar>
