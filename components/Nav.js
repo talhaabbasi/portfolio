@@ -35,7 +35,11 @@ export default function ButtonAppBar() {
           <a href="#projects">
             <Button color="inherit">Projects</Button>
           </a>
-          <a href="#contact">
+          <a
+            href="mailto:talhaabbasi1997@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Button color="inherit">Contact</Button>
           </a>
         </Toolbar>
