@@ -58,7 +58,7 @@ export default function ButtonAppBar() {
               Contact
             </Button>
           </a>
-          <a href="/Talha's Resume.pdf" download>
+          <a href="/Talha Abbasi's Resume.pdf" download>
             <Button
               variant="outlined"
               color="inherit"
