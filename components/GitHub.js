@@ -8,7 +8,6 @@ import CardContent from "@material-ui/core/CardContent"
 import CardMedia from "@material-ui/core/CardMedia"
 import GitHubIcon from "@material-ui/icons/GitHub"
 import CountUp from "react-countup"
-import VisibilitySensor from "react-visibility-sensor"
 
 const useStyles = makeStyles(() => ({
   root: { marginTop: 20 },
