@@ -20,8 +20,8 @@ const useStyles = makeStyles(() => ({
     textTransform: "none",
   },
   resume: {
-    color: "#3c806f",
-    borderColor: "#3c806f",
+    color: "#37ed92",
+    borderColor: "#37ed92",
     textTransform: "none",
   },
 }))
