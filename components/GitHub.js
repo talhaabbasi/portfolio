@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { makeStyles } from "@material-ui/core/styles"
-import { Typography, Container } from "@material-ui/core"
+import { Grid } from "@material-ui/core"
 import Card from "@material-ui/core/Card"
 import CardActionArea from "@material-ui/core/CardActionArea"
 import CardActions from "@material-ui/core/CardActions"
@@ -12,8 +12,7 @@ import CountUp from "react-countup"
 const useStyles = makeStyles(() => ({
   root: { marginTop: 20 },
   media: {
-    height: 85,
-    width: 540,
+    height: 100,
     marginTop: 5,
     marginLeft: 5,
   },
@@ -99,8 +98,8 @@ export default function GitHub() {
   ])
 
   return (
-    <div>
-      <Container maxWidth="sm">
+    <Grid container style={{ justifyContent: "center" }}>
+      <Grid item lg={6} sm={6} xl={6} xs={11}>
         <Card className={classes.root}>
           <CardActionArea>
             <CardMedia
@@ -132,7 +131,7 @@ export default function GitHub() {
             </a>
           </CardActions>
         </Card>
-      </Container>
-    </div>
+      </Grid>
+    </Grid>
   )
 }
